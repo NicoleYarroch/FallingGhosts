@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nicolelivioradiocom.omg.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/turkey_hunter"
+        android:gravity="center"
+        android:textSize="@dimen/description_text_size"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turkeyImage"
+        android:src="@drawable/turkey_big"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginTop="10sp"
+        />
+    
+    <TextView
+        android:id="@+id/scoreText"
+        android:text="@string/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turkeyImage"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="@dimen/score_text_size"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        />
+
+    <Button
+        android:id="@+id/huntButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/scoreText"
+        android:text="@string/hunt_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:textSize="@dimen/button_text_size"
+
+        />
+</RelativeLayout>
